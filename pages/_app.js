@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+import { AppProvider } from '@rasahq/react-tabula/app';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <AppProvider value={{ foo: 'bar' }}>
+      <Component {...pageProps} />
+    </AppProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

@@ -1,4 +1,5 @@
 module.exports = composePlugins({
+  basePath: '/blog',
   cleanUrls: true,
   reactStrictMode: true,
   trailingSlash: true,

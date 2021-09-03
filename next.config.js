@@ -1,9 +1,12 @@
 module.exports = composePlugins({
+  modern: true,
   basePath: '/blog',
   cleanUrls: true,
-  reactStrictMode: true,
   trailingSlash: true,
   webpack5: true,
+  eslint: {
+    ignoreDuringBuilds: true, // save me grief
+  },
   plugins: [[require('next-transpile-modules'), ['@rasahq/react-tabula'], {}]],
 });
 

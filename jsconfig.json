@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "exclude": [
+    "node_modules",
+    "_disabled",
+    "_quokka",
+    "_trash",
+    ".next"
+  ]
+}

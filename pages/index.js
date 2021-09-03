@@ -1,4 +1,4 @@
-import { Article, Dump } from '@rasahq/react-tabula/system';
+import { Article } from '@rasahq/react-tabula/system';
 import Link from 'next/link';
 
 export async function getStaticProps({ params = {}, preview }) {

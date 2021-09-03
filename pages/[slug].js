@@ -31,8 +31,8 @@ export default function PostSingle({ title, params }) {
     <Article>
       <Link href="/">back</Link>
       <h1>{title}</h1>
-      <Dump data={params} />
-      <Dump data={router} />
+      <Dump data={{ params }} />
+      <Dump data={{ router }} />
     </Article>
   );
 }

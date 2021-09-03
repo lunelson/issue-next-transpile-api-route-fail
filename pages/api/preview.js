@@ -1,4 +1,4 @@
-const { basePath } = require('../../next.config');
+const { basePath } = require('../../constants');
 
 export default async function preview(req, res) {
   res.setPreviewData({});

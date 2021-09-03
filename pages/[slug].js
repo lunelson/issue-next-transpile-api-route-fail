@@ -1,5 +1,6 @@
 import { Article, Dump } from '@rasahq/react-tabula/system';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export const slugs = ['my-first-post', 'my-second-post'];
 
@@ -25,11 +26,13 @@ export async function getStaticProps({
 }
 
 export default function PostSingle({ title, params }) {
+  const router = useRouter();
   return (
     <Article>
       <Link href="/">back</Link>
       <h1>{title}</h1>
       <Dump data={params} />
+      <Dump data={router} />
     </Article>
   );
 }

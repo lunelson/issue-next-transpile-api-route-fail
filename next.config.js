@@ -1,6 +1,8 @@
+const { basePath } = require('./constants');
+
 module.exports = composePlugins({
   modern: true,
-  basePath: '/blog',
+  basePath,
   cleanUrls: true,
   trailingSlash: true,
   webpack5: true,
